@@ -1,7 +1,6 @@
 void main() {
   
   //<<<<<<<< Números >>>>>>>>
-
   int    a = 10;
   double b = 5.5;
 
@@ -11,8 +10,8 @@ void main() {
   print(b);
   print(c);
 
-  //<<<<<<< Strings >>>>>>>>>
 
+  //<<<<<<< Strings >>>>>>>>>
   String nombre = 'kevin';
   
   String? apellido; // Null safety
@@ -25,5 +24,20 @@ void main() {
   print(nombre);
   print(apellido);
   print(multi_line);
+
+
+  //<<<<<<< Booleans >>>>>>>>>
+  bool isActive = true;
+  print(isActive);
+
+
+  //<<<<<<< List >>>>>>>>>
+
+  List<String> villanos = ['Lex', 'Red Skull', 'Doom'];
+
+  Iterable<String> filtro = villanos.where((element) => element.startsWith('D'));
+
+  print(filtro);
+  
 
 }
