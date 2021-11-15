@@ -32,7 +32,6 @@ void main() {
 
 
   //<<<<<<< List >>>>>>>>>
-
   List<String> villanos = ['Lex', 'Red Skull', 'Doom'];
 
   Iterable<String> filtro = villanos.where((element) => element.startsWith('D'));
