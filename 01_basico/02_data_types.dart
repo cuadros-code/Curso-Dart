@@ -33,10 +33,27 @@ void main() {
 
   //<<<<<<< List >>>>>>>>>
   List<String> villanos = ['Lex', 'Red Skull', 'Doom'];
-
+  print(villanos);
   Iterable<String> filtro = villanos.where((element) => element.startsWith('D'));
 
   print(filtro);
+
+  //<<<<<<< Set >>>>>>>>> no permite duplicados
+
+  Set<String> villanosSet = {'Lex', 'Red Skull', 'Doom'};
+
+  villanosSet.map((e) => e.toUpperCase()).forEach(print);
+  print(villanosSet);
+
+
+  //<<<<<<< Map >>>>>>>>>
+  Map<String, String> heroes = {
+    'Aquaman': 'Arthur Curry',
+    'Batman': 'Bruce Wayne',
+    'Superman': 'Clark Kent'
+  };
+
+  print(heroes['Aquaman']);
   
 
 }
