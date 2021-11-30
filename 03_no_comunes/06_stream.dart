@@ -3,7 +3,9 @@ import 'dart:async';
 void main(List<String> args) {
   
 
-  final streamController = StreamController<String>();
+  // final streamController = StreamController<String>(); // una suscripcion
+  final streamController = new StreamController<String>.broadcast(); // varias suscripcion
+
 
   streamController.stream.listen(
     (data) => print('despegando: $data'),
