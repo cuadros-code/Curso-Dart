@@ -3,7 +3,7 @@ import 'dart:async';
 void main(List<String> args) {
   
 
-  final streamController = StreamController();
+  final streamController = StreamController<String>();
 
   streamController.stream.listen(
     (data) => print('despegando: $data'),
