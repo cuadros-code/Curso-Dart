@@ -1,14 +1,17 @@
 import 'dart:io';
 
-void main(List<String> args) {
+void main(List<String> args) async {
   
+  final String path = '\\03_no_comunes\\assets\\personas.txt';
 
-  File file = new File( Directory.current.path + '\\03_no_comunes\\assets\\personas.txt');
+  print( await leer(path) );
 
-  Future<String> f = file.readAsString();
+}
 
-  f.then((String s) {
-    print(s.split('\n'));
-  });
 
+leer ( String path ) async {
+  File file = new File( Directory.current.path + path );
+
+
+  return file.readAsString();
 }
