@@ -5,6 +5,8 @@ void main(List<String> args) {
   //crear clase de tipo persona
   final persona = new Persona( edad: 22, nombre: 'Juan', bio: 'Perez');	
 
+  final persona2 = new Persona.personaConNombre('Julio');	
+
 
   //asignar valores a las propiedades
   // persona.nombre = 'Juan';
@@ -17,6 +19,7 @@ void main(List<String> args) {
 
 
   print(persona);
+  print(persona2);
 
 }
 

@@ -29,6 +29,10 @@ class Persona {
   // FORMA 3 // con nombre de propiedad opcional y requerido
   Persona( { required this.edad, this.nombre, this.bio} );
 
+  // FORMA 4 // constructor con nombre
+  Persona.personaConNombre( this.nombre ) {
+    this._date = '2020-05-05';
+  }
 
 
   // metodos
