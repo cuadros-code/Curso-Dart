@@ -21,7 +21,7 @@ class Empleado extends Persona {
   Empleado(String? nombre, int? edad, this.cargo) : super(nombre, edad);
 
   // Empleado(String? nombre, int? edad, this.cargo) : super(nombre, edad);
-
+  @override
   void imprimir() {
     print('Nombre: $nombre, Edad: $edad, Cargo: $cargo');
   }
